@@ -1,0 +1,422 @@
+/* ==================== VARIABLES CSS ==================== */
+:root {
+    /* Couleurs du mode clair (par défaut) */
+    --bg-color: #f4f5f7;
+    --text-color: #1a1a1a;
+    --primary-color: #007bff;
+    --primary-color-hover: #0056b3;
+    --card-bg-color: #ffffff;
+    --card-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    --header-height: 4rem;
+}
+
+[data-theme="dark"] {
+    /* Couleurs pour le mode sombre */
+    --bg-color: #1a1a1a;
+    --text-color: #f4f5f7;
+    --primary-color: #4dabf7;
+    --primary-color-hover: #1e88e5;
+    --card-bg-color: #2c2c2c;
+    --card-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* ==================== RESET & BASE ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 6rem 0 2rem;
+}
+
+.section__title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==================== HEADER & NAV ==================== */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: transparent;
+    transition: background-color 0.4s, box-shadow 0.4s;
+}
+
+.header.scrolled {
+    background-color: var(--card-bg-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav__link:hover {
+    color: var(--primary-color);
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+.theme-switcher i {
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.theme-switcher i:hover {
+    color: var(--primary-color);
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+.hero__container {
+    z-index: 1;
+}
+
+.hero__content {
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero__logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 25px var(--primary-color);
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+    font-size: 1.5rem;
+    color: #eee;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+/* ==================== BUTTON ==================== */
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: var(--primary-color-hover);
+    transform: translateY(-3px);
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ==================== ABOUT SECTION ==================== */
+.about__container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about__description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* ==================== SKILLS SECTION ==================== */
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.skill-card {
+    background-color: var(--card-bg-color);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,123,255,0.2);
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.skill-card span {
+    font-weight: 600;
+}
+
+/* ==================== PROJECTS SECTION ==================== */
+.projects__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: var(--card-bg-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.project-card__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card__content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card__description {
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.project-card--soon {
+    background: transparent;
+    border: 3px dashed var(--text-color);
+    opacity: 0.5;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: default;
+}
+
+.project-card--soon .project-card__content {
+    flex-grow: 0;
+    align-items: center;
+}
+
+.project-card--soon i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.project-card--soon:hover {
+    transform: none;
+    box-shadow: var(--card-shadow);
+}
+
+/* ==================== CONTACT & FOOTER ==================== */
+.contact__container {
+    text-align: center;
+    max-width: 600px;
+}
+
+.contact__container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: var(--card-bg-color);
+    border-top: 1px solid #ddd;
+}
+
+[data-theme="dark"] .footer {
+    border-top: 1px solid #333;
+}
+
+.footer__socials {
+    margin-bottom: 1rem;
+}
+
+.footer__social-link {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 0 0.75rem;
+    transition: color 0.3s;
+}
+
+.footer__social-link:hover {
+    color: var(--primary-color);
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 4rem 0 1rem;
+    }
+    
+    .nav__menu {
+        /* Pour un futur menu burger */
+        display: none; 
+    }
+    
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section__title {
+        font-size: 2rem;
+    }
+}
