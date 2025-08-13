@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unibloc Escalade Carcassonne | Salle de bloc</title>
+    <meta name="description" content="La première salle d'escalade de bloc à Carcassonne. Ouverte 7/7, cours, stages, anniversaires, et école d'escalade.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo"><img src="static/img/logo.png" alt="Unibloc Logo" class="nav__logo"></a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">La Salle</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#cours" class="nav__link">Cours</a></li>
+                    <li class="nav__item"><a href="#stages" class="nav__link">Stages</a></li>
+                    <li class="nav__item"><a href="#anniversaires" class="nav__link">Anniversaires</a></li>
+                    <li class="nav__item"><a href="#tarifs" class="nav__link">Tarifs</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="theme-switcher">
+                <i class="fas fa-moon" id="theme-button"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <img src="static/img/logo.png" alt="Unibloc Logo" class="hero__logo">
+                    <h1 class="hero__title">Escalade de Bloc à Carcassonne</h1>
+                    <h2 class="hero__subtitle">Dépassez-vous, amusez-vous et partagez.</h2>
+                    <a href="#tarifs" class="button">Voir nos tarifs</a><br>
+                    <div class="hero__hours">
+                        <p><strong>Ouvert 7/7</strong></p>
+                        <p>Lundi : 14h - 22h</p>
+                        <p>Mardi - Samedi : 10h - 22h</p>
+                        <p>Dimanche : 10h - 19h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__background" style="background-image: url('https://unibloc-escalade.fr/wp-content/uploads/2025/04/UNIBLOC-SUN.jpg');"></div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="container">
+                <h2 class="section__title">La Première Salle de Bloc à Carcassonne</h2>
+                <div class="about__container">
+                    <p class="about__description">
+                        Né de la passion pour l'escalade, Unibloc est un rêve devenu réalité. Nous avons créé un lieu de 1300 m², dont <strong>700 m² de surface de grimpe</strong>, pour que chacun puisse se dépasser dans une ambiance conviviale. Au-delà des murs, trouvez un espace détente, un bar, et du snacking local pour des moments parfaits après l'effort.
+                    </p>
+                    <div class="about__gallery">
+                        <img src="https://unibloc-escalade.fr/wp-content/uploads/2025/03/Unibloc-1.jpg" alt="Grimpeur chez Unibloc" class="about__gallery-img">
+                        <img src="https://unibloc-escalade.fr/wp-content/uploads/2025/03/test.jpg" alt="Ambiance de la salle Unibloc" class="about__gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section services" id="services">
+            <h2 class="section__title">Nos Services</h2>
+            <div class="projects__container container">
+                <div class="project-card">
+                    <img src="https://unibloc-escalade.fr/wp-content/uploads/2025/04/PHOTO-2025-04-07-18-21-13-4.jpg" alt="Stage d'escalade" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Stages Vacances</h3>
+                        <p class="project-card__description">Pendant les vacances, nous proposons des stages pour les enfants (6-14 ans) et des sessions à la carte pour tous. Une immersion parfaite dans le monde du bloc !</p>
+                        <a href="#stages" class="button button--flex">Infos & Inscriptions <i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                     <img src="https://unibloc-escalade.fr/wp-content/uploads/2025/04/PHOTO-2025-04-11-09-46-42.jpg" alt="Anniversaire à Unibloc" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Anniversaires</h3>
+                        <p class="project-card__description">Offrez une fête inoubliable : 1h30 de grimpe encadrée par un moniteur et 30min de goûter avec des produits locaux et bios.</p>
+                        <a href="#anniversaires" class="button button--flex">Réserver <i class="fas fa-birthday-cake"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                     <img src="https://unibloc-escalade.fr/wp-content/uploads/2025/04/PHOTO-2025-04-07-18-21-13-1.jpg" alt="Espace détente et réservation" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Accès & Réservation</h3>
+                        <p class="project-card__description">Accédez à votre espace membre, réservez vos séances et gérez votre abonnement en toute simplicité sur notre plateforme partenaire.</p>
+                        <a href="https://member-app.deciplus.pro/unibloc/signIn?to=home" target="_blank" class="button button--flex">Espace Membre <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="cours">
+            <h2 class="section__title">L'École d'Escalade Unibloc</h2>
+            <div class="projects__container container">
+                <div class="project-card">
+                    <img src="http://unibloc-escalade.fr/wp-content/uploads/2025/06/1ca42565-55da-48b5-8b18-6124060c77bb.jpg" alt="Cours petite enfance 4-6 ans" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Petite Enfance (4-6 ans)</h3>
+                        <p class="project-card__description">Une approche 100% ludique pour découvrir l'escalade, développer la psychomotricité et l'équilibre en s'amusant. (Séances d'1h)</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="http://unibloc-escalade.fr/wp-content/uploads/2025/06/IMG_1922.jpg" alt="Cours enfants 6-10 ans" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Enfants (6-10 ans)</h3>
+                        <p class="project-card__description">L'escalade devient un terrain de jeu créatif pour apprendre les règles de sécurité et de vie en groupe. (Séances d'1h30)</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="http://unibloc-escalade.fr/wp-content/uploads/2025/06/IMG_1925.jpg" alt="Cours préados 11-14 ans" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Pré-Ados (11-14 ans)</h3>
+                        <p class="project-card__description">L'âge idéal pour allier agilité et technique. On développe force, souplesse et lecture de bloc pour se dépasser. (Séances d'1h30)</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="http://unibloc-escalade.fr/wp-content/uploads/2025/06/f946faec-b059-4b59-9af6-87da5852cafd.jpg" alt="Cours adolescents 15-18 ans" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Adolescents (15-18 ans)</h3>
+                        <p class="project-card__description">La performance à portée de main. On développe l'autonomie, l'explosivité et la capacité motrice. (Séances d'1h30)</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="http://unibloc-escalade.fr/wp-content/uploads/2025/06/IMG_1908.jpg" alt="Cours adultes" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Adultes (18 ans et +)</h3>
+                        <p class="project-card__description">Il n'est jamais trop tard pour commencer ! Des cours adaptés à vos objectifs, du débutant au confirmé. (Séances d'1h30)</p>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <img src="http://unibloc-escalade.fr/wp-content/uploads/2025/06/IMG_1924-1.jpg" alt="Groupe performance" class="project-card__img">
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Groupe Performance</h3>
+                        <p class="project-card__description">Pour les grimpeurs confirmés qui veulent repousser leurs limites avec un entraînement spécifique et une préparation à la compétition.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="container" style="text-align: center; margin-top: 3rem;">
+                <a href="http://unibloc-escalade.fr/wp-content/uploads/2025/07/cours.jpg" target="_blank" class="button button--flex">
+                    <i class="fas fa-calendar-alt"></i> Voir le Calendrier & Tarifs des Cours
+                </a>
+            </div>
+        </section>
+
+        <section class="section" id="stages">
+            <div class="container">
+                <h2 class="section__title">Stages Vacances de Juillet</h2>
+                <div class="about__details">
+                    <div class="about__card">
+                        <i class="fas fa-child"></i>
+                        <h3>Stage Escalade Enfant</h3>
+                        <p><strong>Pour qui :</strong> 6 - 14 ans</p>
+                        <p><strong>Quand :</strong> Du mardi au vendredi</p>
+                        <p><strong>Horaires :</strong> 13h30 à 16h30</p>
+                        <p><strong>Tarif :</strong> 140 € pour 4 jours</p>
+                    </div>
+                    <div class="about__card">
+                        <i class="fas fa-users"></i>
+                        <h3>Stage Escalade à la Carte</h3>
+                        <p><strong>Pour qui :</strong> Pour tous !</p>
+                        <p><strong>Quand :</strong> Du mardi au vendredi</p>
+                        <p><strong>Horaires :</strong> 10h30 à 11h30</p>
+                        <p><strong>Tarif :</strong> 15 € par jour</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="tel:+33468130712" class="button button--flex">
+                        <i class="fas fa-phone"></i> Contact & Inscriptions
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="anniversaires">
+            <div class="container">
+                <h2 class="section__title">Fête ton Anniversaire à Unibloc !</h2>
+                <div class="about__container">
+                    <img src="https://unibloc-escalade.fr/wp-content/uploads/2025/03/test.jpg" alt="Fêter son anniversaire à Unibloc" class="about__gallery-img" style="max-width: 500px; margin: 0 auto 2rem;">
+                    <p class="about__description">
+                        Organisez une fête originale et sportive ! Nous nous occupons de tout pour que votre enfant et ses amis passent un moment inoubliable.
+                    </p>
+                    <div class="about__details">
+                        <div class="about__card">
+                            <i class="fas fa-birthday-cake"></i>
+                            <h3>La Formule</h3>
+                            <p>1h30 de découverte de l'escalade encadrée par un moniteur diplômé.</p>
+                            <p>30 minutes de goûter avec gâteau (Pâtisserie Katia.N) et boissons artisanales.</p>
+                        </div>
+                        <div class="about__card">
+                             <i class="fas fa-calendar-check"></i>
+                            <h3>Les Créneaux</h3>
+                            <p><strong>Mercredi & Samedi</strong></p>
+                            <p>14h00 à 16h00</p>
+                            <p>15h30 à 17h30</p>
+                        </div>
+                        <div class="about__card">
+                            <i class="fas fa-euro-sign"></i>
+                            <h3>Le Tarif</h3>
+                            <p><strong>180 €</strong> pour 8 personnes.</p>
+                            <p>5 € par enfant supplémentaire (max 12).</p>
+                            <p><strong>Cadeau :</strong> 2 entrées gratuites offertes à votre enfant !</p>
+                        </div>
+                    </div>
+                     <div style="text-align: center; margin-top: 3rem;">
+                        <a href="#contact" class="button">Réserver une date</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="tarifs">
+             <h2 class="section__title">Nos Tarifs d'Accès Libre</h2>
+            <div class="skills__container container">
+                <div class="skill-card"><h3>À l'unité</h3><span>Adulte: 14€<br>Réduit: 12€<br>-12 ans: 10€<br>Location: 3€</span></div>
+                <div class="skill-card"><h3>Carnet 10 Séances</h3><span>Adulte: 120€<br>Réduit: 110€<br>Enfant: 80€</span></div>
+                <div class="skill-card"><h3>Abonnement Mensuel</h3><span>Adulte: 65€<br>Réduit: 60€<br>-12 ans: 45€</span></div>
+                <div class="skill-card"><h3>Abonnement Annuel</h3><span>Adulte: 490€<br>Réduit: 420€<br>-12 ans: 285€</span></div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2 class="section__title">Contactez-nous</h2>
+            <div class="contact__container container">
+                <p>Une question, une réservation ? Nous sommes là pour vous aider.</p>
+                <p class="contact__info">
+                    <i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/wY3a7fBwyBf8aH8V7" target="_blank">670 BIS Chem. de Maquens, 11000 Carcassonne</a>
+                </p>
+                 <p class="contact__info">
+                    <i class="fas fa-phone"></i> <a href="tel:+33468130712">04 68 13 07 12</a>
+                </p>
+                <a href="mailto:unibloc.contact@gmail.com" class="button">Envoyer un email</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__socials">
+                <a href="https://www.facebook.com/profile.php?id=61567002122323" target="_blank" class="footer__social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/unibloc.escalade.carcassonne/" target="_blank" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="footer__copy">&#169; 2025 Unibloc. Tous droits réservés. Site réalisé par Kertie.</p>
+        </div>
+    </footer>
+    
+    <script src="static/js/main.js"></script>
+</body>
+</html>
